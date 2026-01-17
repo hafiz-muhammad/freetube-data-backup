@@ -2,10 +2,10 @@
 
 # GitHub: https://github.com/hafiz-muhammad
 
-# Set directory for scripts.
+# Set directory for backup scripts
 SCRIPTS_DIR="$(dirname "$0")/scripts"
 
-# Displays menu options.
+# Display menu
 menu() {
     echo ""
     echo "---------------------------------------------------"
@@ -22,37 +22,33 @@ menu() {
     echo ""
 }
 
-# Displays menu.
 menu
 
-# Prompts the user to enter a choice between 0-2 and reads the input.
+# Read user's menu selection
 read -p "Enter your choice (0-2): " CHOICES
 
-# Handles user's choice.
 case $CHOICES in
 1)
+    # Run backup script for non-Flatpak installs (package managers, AppImage, AUR, .zip, .7z)
     echo -e "\nOption 1: Backup FreeTube Data (Linux) chosen. Executing the 'ft-linux-backup.sh' script...\n"
-    # Makes ft-linux-backup.sh executable.
     chmod +x "$SCRIPTS_DIR/ft-linux-backup.sh"
-    # Executes ft-linux-backup.sh
     "$SCRIPTS_DIR/ft-linux-backup.sh"
-    # Restarts the current script.
     exec "$0"
     ;;
 2)
+     # Run backup script for Flatpak installations
     echo -e "\nOption 2: Backup FreeTube Data (Flatpak) chosen. Executing the 'ft-flatpak-backup.sh' script...\n"
-    # Makes ft-flatpak-backup.sh executable.
     chmod +x "$SCRIPTS_DIR/ft-flatpak-backup.sh"
-    # Executes ft-flatpak-backup.sh
     "$SCRIPTS_DIR/ft-flatpak-backup.sh"
-    # Restarts the current script.
     exec "$0"
     ;;
 0)
+    # Exit the menu
     echo -e "\nExited"
     exit
     ;;
 *)
+    # Handle invalid input
     echo "Invalid choice. Enter a number from 0 to 2."
     ;;
 esac
