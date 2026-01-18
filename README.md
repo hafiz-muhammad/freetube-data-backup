@@ -19,7 +19,7 @@ chmod +x ~/freetube-data-backup/backup-freetube.sh
 <br>
 <br>
 
-Files that will be backed up: **profiles.db**, **settings.db**, **playlists.db**, **history.db**,**search-history.db**, **subscription-cache.db**, and **Preferences**
+Files that will be backed up: **profiles.db**, **settings.db**, **playlists.db**, **history.db**, **search-history.db**, **subscription-cache.db**, and **Preferences**
 
 <br>
 
