@@ -30,3 +30,5 @@ copy_file ~/.config/FreeTube/playlists.db
 copy_file ~/.config/FreeTube/Preferences
 copy_file ~/.config/FreeTube/profiles.db
 copy_file ~/.config/FreeTube/settings.db
+copy_file ~/.config/FreeTube/search-history.db
+copy_file ~/.config/FreeTube/subscription-cache.db

@@ -30,3 +30,5 @@ copy_file ~/.var/app/io.freetubeapp.FreeTube/config/FreeTube/playlists.db
 copy_file ~/.var/app/io.freetubeapp.FreeTube/config/FreeTube/Preferences
 copy_file ~/.var/app/io.freetubeapp.FreeTube/config/FreeTube/profiles.db
 copy_file ~/.var/app/io.freetubeapp.FreeTube/config/FreeTube/settings.db
+copy_file ~/.var/app/io.freetubeapp.FreeTube/config/FreeTube/search-history.db
+copy_file ~/.var/app/io.freetubeapp.FreeTube/config/FreeTube/subscription-cache.db
